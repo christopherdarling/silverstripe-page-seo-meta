@@ -73,10 +73,10 @@ class PageExtension extends DataExtension
     }
 
     /** @return string */
-    public function MetaTags($tagsHtml)
+    public function MetaTags(&$tagsHtml)
     {
         // SS 4.4+ has MetaComponents, older versions don't
-        if ($this->owner->hasMethod('MetaComponents')) return $tagsHtml;
+        if (method_exists($this->owner, 'MetaComponents')) return $tagsHtml;
 
         // BC for SS <4.4
         $metaValue = $this->generateMetaRobotsTagValue();
