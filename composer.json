@@ -1,0 +1,29 @@
+{
+    "name": "christopherdarling/silverstripe-page-seo-meta",
+    "description": "Adds SEO Meta extensions",
+    "type": "silverstripe-vendormodule",
+    "keywords": [
+        "silverstripe",
+        "seo",
+        "meta",
+        "nofollow",
+        "noindex"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [{
+        "name": "Christopher Darling",
+        "email": "me@christopherdarling.co.uk"
+    }],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "silverstripe/cms": "^4.0",
+        "silverstripe/vendor-plugin": "^1"
+    },
+    "autoload": {
+        "psr-4": {
+            "ChristopherDarling\\PageSeoMeta\\": ["src/"]
+        }
+    }
+}
