@@ -1,0 +1,6 @@
+---
+name: cd-page-seo-meta
+---
+Page:
+  extensions:
+    - ChristopherDarling\PageSeoMeta\PageExtension
